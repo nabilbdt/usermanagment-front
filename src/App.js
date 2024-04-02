@@ -2,14 +2,23 @@ import './App.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './layout/navbar';
 import Home from './pages/Home';
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
+import AddUser from './users/AddUser';
 
 function App() {
   return (
     <div className='App'>
-      <Navbar/>
-      <Home/>
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route exact path='/' element={<Home />} />
+          <Route exact path='/adduser' element={<AddUser />} />
+        </Routes>
+      </Router>
+
+
     </div>
-    
+
   );
 }
 
