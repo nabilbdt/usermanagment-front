@@ -35,9 +35,9 @@ function AddUser() {
                         </div>
                         <div className='mb-3 '>
                             <label htmlFor="email" className='form-label'>Email</label>
-                            <input type="email" onChange={(e) => { onInputChange(e) }} value={email} className='form-control' placeholder='Enter the Email' name='email' />
+                            <input type="email" onChange={(e) => { onInputChange(e) }} value={email} className='form-control ' placeholder='Enter the Email' name='email' />
                         </div>
-                        <button type='submit' className='btn btn-outline-primary'>Add</button>
+                        <button type='submit' className='btn btn-dark'>Add</button>
                         <Link to={'/'} type='reset' className='btn btn-outline-danger mx-2'>Cancel</Link>
                     </form>
                 </div>
